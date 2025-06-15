@@ -1,39 +1,202 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<link href="tools/960.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/Adobe_Caslon_Pro_600.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover:true})
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamás Katona, Ph.D.</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #5d0025;
+            --secondary-color: #65696e;
+            --text-color: #1d1419;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .contact-info {
+            color: var(--secondary-color);
+        }
+
+        .publication {
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .timeline-title {
+            font-weight: 700;
+        }
+
+        .timeline-description {
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container_12" id="content">
-	<h1>Tamas Katona</h1>
-	<h3>My website isn’t quite ready, but you can still...</h3>
-	<div class="main">
-		<div class="mcontent">
-			<div class="box mr20">
-				<h2>Contact me</h2>
-Email : <a href="#">info@tamaskatona.com</a></p>
-			</div>
-			<div class="box mr20">
-				<h2>PhD student</h2>
-				<p>University of Debrecen</p>
-			</div>
-			<div class="box2">
-				<h2>Follow me</h2>
-				<a href="https://twitter.com/katonatomi"><img src="images/t.png" alt=""/></a>
-				<a href="https://www.facebook.com/SoldiAI"><img src="images/f.png" alt=""/></a>				
-			</div>			
-		</div>
-	</div>
-</div>
+    <div class="container py-4">
+        <!-- Header Section -->
+        <header class="header text-center">
+            <img src="images/image2.jpg" alt="Tamás Katona" class="profile-img">
+            <h1 class="display-4 fw-bold text-primary">Tamás Katona, Ph.D.</h1>
+            <div class="contact-info">
+                <p class="mb-1">hello@katonatomi.com</p>
+                <p class="mb-0">linkedin.com/in/katonatomi</p>
+            </div>
+        </header>
+
+        <!-- Research Section -->
+        <section class="my-4">
+            <h2 class="section-title">Research</h2>
+            <div class="timeline-item">
+                <div class="timeline-date">2013 - Present</div>
+                <div class="timeline-title">University of Debrecen, Various Faculties</div>
+                <div class="timeline-description">
+                    <p>Conducted multidisciplinary research at the University of Debrecen across various faculties, including the Institute of Biophysics and Cell Biology, the Faculty of Medicine, and the Department of Data Science and Visualization.</p>
+                    <p>Focus areas included confocal imaging systems for molecular and cellular studies, statistical analysis in OB-GYN research, and advanced data visualization in laboratory medicine.</p>
+                </div>
+            </div>
+
+            <h3 class="h5 mt-4">Selected Publications</h3>
+            <div class="publication">
+                <p><b>Katona, T.</b>; Tóth, G.; Petró, M.; Harangi, B. Developing New Fully Connected Layers for Convolutional Neural Networks with Hyperparameter Optimization for Improved Multi-Label Image Classification. Mathematics 2024, 12, 806. <a href="https://doi.org/10.3390/math12060806" target="_blank">https://doi.org/10.3390/math12060806</a></p>
+            </div>
+            <div class="publication">
+                <p><b>Katona, T.</b>; Tóth, G.; Petró, M.; Harangi, B. Advanced Multi-Label Image Classification Techniques Using Ensemble Methods. Mach. Learn. Knowl. Extr. 2024, 6, 1281-1297. <a href="https://doi.org/10.3390/make6020060" target="_blank">https://doi.org/10.3390/make6020060</a></p>
+            </div>
+            <div class="publication">
+                <p>Rebenku I, Bartha FA, <b>Katona, T.</b> et al. Taking molecular pathology to the next level: Whole slide multicolor confocal imaging with the Pannoramic Confocal digital pathology scanner. Cytometry. 2023; 103(3): 198–207. <a href="https://doi.org/10.1002/cyto.a.24675" target="_blank">https://doi.org/10.1002/cyto.a.24675</a></p>
+            </div>
+            <div class="publication">
+                <p>Csehely, S.; Kun, A.; Orbán, E.; <b>Katona, T.</b>; Orosz, M.; Herman, T.; Krasznai, Z.T.; Deli, T.; Jakab, A. Prevalence of Impaired Bone Health in Premature Ovarian Insufficiency and Early Menopause and the Impact of Time to Diagnosis. J. Clin. Med. 2025, 14, 4210. <a href="https://doi.org/10.3390/jcm14124210" target="_blank">https://doi.org/10.3390/jcm14124210</a></p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="my-4">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-title">Software Developer at SAP Emarsys</div>
+                <div class="timeline-description">
+                    <p>Contributed to the development of Smart Insight, an advanced customer intelligence platform. Designed and maintained backend services using Ruby on Rails, implemented data pipelines using Google Cloud Platform for scalable data processing and analytics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2015 - 2024</div>
+                <div class="timeline-title">Chief Product Officer and Co-founder at InSimu</div>
+                <div class="timeline-description">
+                    <p>Led multidisciplinary product team, managed development of cross-platform applications using Xamarin.Forms, Swift, and Flutter. Achieved over 200,000 users with 20,000 monthly active users during COVID.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2022</div>
+                <div class="timeline-title">Guest Lecturer at University of Debrecen</div>
+                <div class="timeline-description">
+                    <p>Taught C++, C#, Unity, and Unreal Engine to BSc students. Mentored students in game development projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="my-4">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">2016 - 2025</div>
+                <div class="timeline-title">Ph.D. in Computer Science</div>
+                <div class="timeline-description">
+                    <p>University of Debrecen, Doctoral School of Informatics</p>
+                    <p>Doctoral program: Data Science and Visualization</p>
+                    <p>Thesis: Optimization of Multi-Label Deep Learning Networks for Medical Image Processing Tasks</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2014 - 2016</div>
+                <div class="timeline-title">MSc in Computer Science - Computer Graphics and Image Processing</div>
+                <div class="timeline-description">
+                    <p>University of Debrecen, Faculty of Informatics</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2010 - 2014</div>
+                <div class="timeline-title">BSc in Computer Science Engineering - Computer Networks and ICT</div>
+                <div class="timeline-description">
+                    <p>University of Debrecen, Faculty of Informatics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="my-4">
+            <h2 class="section-title">Additional Information</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Courses</h3>
+                    <ul class="list-unstyled">
+                        <li>2023 - NVIDIA Accelerating Data Engineering Pipelines</li>
+                        <li>2022 - TensorFlow: Advanced Techniques (DeepLearning.AI, Coursera)</li>
+                        <li>2022 - DeepLearning.AI TensorFlow Developer (DeepLearning.AI, Coursera)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h5">Languages & Skills</h3>
+                    <ul class="list-unstyled">
+                        <li>English - Intermediate level (B2)</li>
+                        <li>Driving - Category B license</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html> 
